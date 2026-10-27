@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riverbend Ethanol | Corn bids and futures quotes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<b>Riverbend Ethanol</b>
+<ul aria-label="Main"><li><a href="#bids">Cash bids</a></li><li><a href="#futures">Futures quotes</a></li><li><a href="#alerts">Text alerts</a></li><li><a href="#delivery">Delivery</a></li><li><a href="#contact">Contact</a></li></ul>
+<span class="open">Receiving open 24 hours</span>
+</div>
+</header>
+
+<main>
+<div class="view on" id="v-bids">
+<div class="hero">
+<svg viewBox="0 0 420 300" aria-hidden="true" fill="#fff" fill-opacity=".35">
+<rect x="20" y="190" width="70" height="95" rx="8"/><rect x="100" y="170" width="70" height="115" rx="8"/><rect x="180" y="200" width="60" height="85" rx="8"/>
+<rect x="260" y="60" width="28" height="225"/><rect x="298" y="90" width="28" height="195"/><rect x="336" y="40" width="28" height="245"/>
+<rect x="378" y="10" width="14" height="275"/>
+<rect x="0" y="285" width="420" height="15"/>
+</svg>
+<div class="wrap">
+<div class="hero-body">
+<h1>A steady home for your corn, every day of the year.</h1>
+<p>One of the region's largest ethanol plants buys corn around the clock, with posted bids, fast unloading and payment within two business days.</p>
+<a class="btn main" href="#bids">See today's corn bids</a>
+<a class="btn alt" href="#futures">Futures quotes</a>
+<a class="btn main m-only" href="tel:+10000000000">Call the grain desk</a>
+</div>
+</div>
+</div>
+
+<section class="s" id="bids">
+<div class="wrap">
+<h2>Today's corn bids</h2>
+<p class="lede">Posted each morning at 7:00 and updated whenever the market moves more than a few cents.</p>
+<div class="rows">
+<div class="row hdr"><span>Delivery period</span><span>Type</span><span>Cash bid</span><span>Basis</span></div>
+<div class="row"><h3>Current</h3><span class="ty">Cash</span><span class="bid">$4.42</span><small>+0.05 vs. December</small></div>
+<div class="row"><h3>Next month</h3><span class="ty">Forward</span><span class="bid">$4.48</span><small>+0.08 vs. December</small></div>
+<div class="row"><h3>Spring</h3><span class="ty">Forward</span><span class="bid">$4.66</span><small>+0.10 vs. May</small></div>
+<div class="row"><h3>Summer</h3><span class="ty">Forward</span><span class="bid">$4.71</span><small>+0.12 vs. July</small></div>
+</div>
+<p class="note">Sample prices. Replace them with your own bids or connect your market data feed.</p>
+</div>
+</section>
+</div>
+
+<div class="view" id="v-fut">
+<section class="s band" id="futures">
+<div class="wrap">
+<h2>Futures quotes</h2>
+<p class="lede">The markets we watch every day. Pick a market to see its nearby contracts.</p>
+<div class="tabs" role="tablist" aria-label="Futures markets" id="tabs"></div>
+<p class="unit" id="unit"></p>
+<div class="rows" id="quotes" role="tabpanel"></div>
+<p class="note">Sample quotes shown for layout only. Quotes are delayed at least 10 minutes and are not trading advice. Connect a licensed market data feed to show live prices.</p>
+</div>
+</section>
+</div>
+
+<div class="view" id="v-alt">
+<section class="s" id="alerts">
+<div class="wrap alerts">
+<div>
+<h2>Text alerts</h2>
+<p class="lede">Get the numbers you care about on your phone. Pick your alerts, then send one text to sign up.</p>
+<p class="note">Message and data rates may apply. Reply STOP at any time to cancel.</p>
+</div>
+<div>
+<div class="opts" role="group" aria-label="Choose your alerts">
+<label class="opt"><input type="checkbox" value="BIDS" checked><div><strong>Daily corn bids</strong><span>Cash and forward bids each morning at 7:00.</span></div></label>
+<label class="opt"><input type="checkbox" value="FUTURES"><div><strong>Big futures moves</strong><span>When corn or ethanol moves sharply during the day.</span></div></label>
+<label class="opt"><input type="checkbox" value="HOURS"><div><strong>Receiving hours and closures</strong><span>Holiday hours, shutdowns and long lines.</span></div></label>
+<label class="opt"><input type="checkbox" value="WEATHER"><div><strong>Weather delays</strong><span>When storms or road conditions slow deliveries.</span></div></label>
+</div>
+<a class="btn main" id="smsgo" href="#">Sign up by text</a>
+<p class="note" id="smsprev"></p>
+</div>
+</div>
+</section>
+</div>
+
+<div class="view" id="v-del">
+<section class="s">
+<div class="wrap">
+<h2>The plant at a glance</h2>
+<p class="lede">Large, steady demand means growers can sell when they want, not just at harvest.</p>
+<dl class="facts">
+<div><dt>Ethanol per year</dt><dd>140 million gal.</dd></div>
+<div><dt>Corn used per year</dt><dd>50 million bu.</dd></div>
+<div><dt>Receiving</dt><dd>24 hours</dd></div>
+<div><dt>Settlement</dt><dd>2 business days</dd></div>
+</dl>
+</div>
+</section>
+
+<section class="s band" id="delivery">
+<div class="wrap">
+<h2>Delivering your corn</h2>
+<p class="lede">Rail and truck lanes run in parallel, so trucks don't wait behind unit trains.</p>
+<ol class="steps">
+<li><h3>Check in</h3><p>Scan your delivery contract or give your name at the scale.</p></li>
+<li><h3>Sample and grade</h3><p>A probe pulls the load for moisture, test weight and damage.</p></li>
+<li><h3>Unload</h3><p>Dump at the receiving pit and weigh out empty.</p></li>
+<li><h3>Get paid</h3><p>Take your ticket now. Payment arrives in two business days.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="s">
+<div class="wrap two">
+<div>
+<h2>What your corn becomes</h2>
+<p class="lede">Every bushel is used. Nothing leaves the plant as waste.</p>
+</div>
+<ul>
+<li><strong>Fuel ethanol</strong><span>Shipped by rail and truck to blenders across the region.</span></li>
+<li><strong>Distillers grains</strong><span>High-protein livestock feed, sold wet or dried. Ask our feed desk for pricing.</span></li>
+<li><strong>Corn oil and CO2</strong><span>Corn oil goes to biodiesel, and captured CO2 goes to food and beverage use.</span></li>
+</ul>
+</div>
+</section>
+</div>
+
+<div class="view" id="v-con">
+<section class="s contact" id="contact">
+<div class="wrap">
+<h2>Grain desk and receiving</h2>
+<p>1 Plant Road, Riverbend. Call before you load if you're bringing more than ten trucks in a day.</p>
+<div class="hours"><span>Corn receiving</span><span>24 hours, 7 days</span><span>Grain desk</span><span>6:00 to 18:00, Mon to Sat</span><span>Feed desk</span><span>7:00 to 16:00, Mon to Fri</span></div>
+<a class="btn main" href="tel:+10000000000">Call +1 000 000 0000</a>
+<a class="btn alt" href="mailto:graindesk@example.com" style="color:#fff">Email graindesk@example.com</a>
+</div>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Riverbend Ethanol. Replace the placeholder name, volumes, prices, hours and contact details with your own.</div></footer>
+
+<nav class="bar" id="bar" aria-label="Sections">
+<button type="button" data-v="bids" aria-current="page"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Bids</button>
+<button type="button" data-v="fut"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>Futures</button>
+<button type="button" data-v="alt"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Alerts</button>
+<button type="button" data-v="del"><svg viewBox="0 0 24 24"><path d="M1 6h13v10H1zM14 10h5l3 3v3h-8zM6 19a2 2 0 1 0 0-.01M18 19a2 2 0 1 0 0-.01"/></svg>Deliver</button>
+<button type="button" data-v="con"><svg viewBox="0 0 24 24"><path d="M22 17v3a2 2 0 0 1-2.2 2A19 19 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 17z"/></svg>Contact</button>
+</nav>
+
+<script src="script.js" defer></script>
+</body>
+</html>
